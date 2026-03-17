@@ -41,9 +41,7 @@ Eliminar
 </tr>
 
 `
-
 })
-
 }
 
 function eliminarHabitacion(index){
