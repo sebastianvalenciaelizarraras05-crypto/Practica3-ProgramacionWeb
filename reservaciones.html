@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reservaciones | Hotel Quinta Dalam</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="header">
+<nav class="nav">
+<div class="logo">HOTEL QUINTA DALAM</div>
+<ul class="menu">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="habitaciones.html">Habitaciones</a></li>
+<li><a href="reservaciones.html" class="active">Reservaciones</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+<li><a href="mision-vision.html">Misión & Visión</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Reservaciones</h1>
+<p>Reserva tu experiencia exclusiva en Hotel Quinta Dalam.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2>Formulario de Reserva</h2>
+
+<form class="form-reserva" action="#" method="post">
+
+<div class="form-grid">
+
+<div>
+<label for="nombre">Nombre completo</label>
+<input type="text" id="nombre" name="nombre" required>
+</div>
+
+<div>
+<label for="correo">Correo electrónico</label>
+<input type="email" id="correo" name="correo" required>
+</div>
+
+<div>
+<label for="telefono">Teléfono</label>
+<input type="tel" id="telefono" name="telefono" required>
+</div>
+
+<div>
+<label for="habitacion">Tipo de habitación</label>
+<select id="habitacion" name="habitacion" required>
+<option value="">Seleccione una opción</option>
+<option value="sencilla">Habitación Sencilla</option>
+<option value="doble">Habitación Doble</option>
+<option value="matrimonial">Habitación Matrimonial</option>
+<option value="familiar">Habitación Familiar</option>
+</select>
+</div>
+
+<div>
+<label for="entrada">Fecha de entrada</label>
+<input type="date" id="entrada" name="entrada" required>
+</div>
+
+<div>
+<label for="salida">Fecha de salida</label>
+<input type="date" id="salida" name="salida" required>
+</div>
+
+<div>
+<label for="adultos">Número de adultos</label>
+<input type="number" id="adultos" name="adultos" min="1" max="10" required>
+</div>
+
+<div>
+<label for="ninos">Número de niños</label>
+<input type="number" id="ninos" name="ninos" min="0" max="10">
+</div>
+
+</div>
+
+<div class="form-boton">
+<button type="submit">Confirmar Reserva</button>
+</div>
+
+</form>
+
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+<p>© 2026 Hotel Quinta Dalam - Todos los derechos reservados</p>
+</footer>
+
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="¡CSS Válido!" />
+    </a>
+</p>
+
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="¡CSS Válido!" />
+    </a>
+</p>
+      
+<script src="js/reservas.js"></script>
+
+<script>
+window.addEventListener("scroll", function() {
+const header = document.querySelector(".header");
+header.classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
+
+</body>
+</html>

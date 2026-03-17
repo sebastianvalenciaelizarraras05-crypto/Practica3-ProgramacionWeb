@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Habitaciones | Hotel Quinta Dalam</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="header">
+<nav class="nav">
+<div class="logo">HOTEL QUINTA DALAM</div>
+<ul class="menu">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="habitaciones.html" class="active">Habitaciones</a></li>
+<li><a href="reservaciones.html">Reservaciones</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+<li><a href="mision-vision.html">Misión & Visión</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Habitaciones</h1>
+<p>Elegancia, confort y descanso en cada espacio.</p>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2>Nuestras Habitaciones</h2>
+
+<div class="habitaciones-grid">
+
+<a href="habitacion-sencilla.html" class="habitacion-card">
+<img src="imagenes/sencilla.webp" alt="Habitación Sencilla">
+<div class="habitacion-info">
+<h3>Habitación Sencilla</h3>
+<p>Ideal para viajes individuales.</p>
+</div>
+</a>
+
+<a href="habitacion-doble.html" class="habitacion-card">
+<img src="imagenes/doble.png" alt="Habitación Doble">
+<div class="habitacion-info">
+<h3>Habitación Doble</h3>
+<p>Perfecta para compartir comodidad.</p>
+</div>
+</a>
+
+<a href="habitacion-matrimonial.html" class="habitacion-card">
+<img src="imagenes/matrimonial.png" alt="Habitación Matrimonial">
+<div class="habitacion-info">
+<h3>Habitación Matrimonial</h3>
+<p>Espacio íntimo y sofisticado.</p>
+</div>
+</a>
+
+<a href="habitacion-familiar.html" class="habitacion-card">
+<img src="imagenes/familiar.png" alt="Habitación Familiar">
+<div class="habitacion-info">
+<h3>Habitación Familiar</h3>
+<p>Amplia y cómoda para toda la familia.</p>
+</div>
+</a>
+
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+<p>© 2026 Hotel Quinta Dalam</p>
+</footer>
+
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="¡CSS Válido!" />
+    </a>
+</p>
+
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="¡CSS Válido!" />
+    </a>
+</p>
+      
+<script>
+window.addEventListener("scroll", function() {
+const header = document.querySelector(".header");
+header.classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
+
+</body>
+</html>

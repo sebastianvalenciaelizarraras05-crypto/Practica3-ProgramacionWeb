@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Administrador | Hotel Quinta Dalam</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/styles.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<header class="header">
+
+<nav class="nav">
+
+<div class="logo">
+HOTEL QUINTA DALAM
+</div>
+
+<ul class="menu admin-menu">
+
+<li class="tab-btn active" onclick="mostrarTab('dashboard', this)">
+Dashboard
+</li>
+
+<li class="tab-btn" onclick="mostrarTab('servicios', this)">
+Servicios
+</li>
+
+<li class="tab-btn" onclick="mostrarTab('habitaciones', this)">
+Habitaciones
+</li>
+
+<li class="tab-btn" onclick="mostrarTab('reservas', this)">
+Reservas
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Panel Administrador</h1>
+
+<p>Gestión completa del Hotel Quinta Dalam</p>
+
+</div>
+
+</section>
+
+<!-- DASHBOARD -->
+
+<section id="dashboard" class="admin-tab">
+
+<div class="container">
+
+<h2>Estadísticas del Hotel</h2>
+
+<canvas id="graficaReservas"></canvas>
+
+</div>
+
+</section>
+
+<!-- SERVICIOS -->
+
+<section id="servicios" class="admin-tab hidden">
+
+<div class="container">
+
+<h2>Administrar Servicios</h2>
+<h2>Gestión de Servicios del Hotel</h2>
+
+<input type="text" id="servicio" placeholder="Nuevo servicio">
+
+<button onclick="agregarServicio()">
+Agregar Servicio
+</button>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Servicio</th>
+<th>Acción</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tablaServicios"></tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- HABITACIONES -->
+
+<section id="habitaciones" class="admin-tab hidden">
+
+<div class="container">
+
+<h2>Administrar Habitaciones</h2>
+<h2>Gestión de Servicios del Hotel</h2>
+
+<input type="text" id="nombreHabitacion" placeholder="Nombre">
+
+<input type="number" id="precioHabitacion" placeholder="Precio">
+
+<button onclick="agregarHabitacion()">
+Agregar Habitación
+</button>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Habitación</th>
+<th>Precio</th>
+<th>Acción</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tablaHabitaciones"></tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<!-- RESERVAS -->
+
+<section id="reservas" class="admin-tab hidden">
+
+<div class="container">
+
+<h2>Reservas Recibidas</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Nombre</th>
+<th>Correo</th>
+<th>Teléfono</th>
+<th>Habitación</th>
+<th>Entrada</th>
+<th>Salida</th>
+<th>Acción</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tablaReservas"></tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<script src="js/admin.js"></script>
+
+<script>
+window.addEventListener("scroll", function() {
+const header = document.querySelector(".header");
+header.classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
+
+</body>
+</html>

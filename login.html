@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Administrador | Hotel Quinta Dalam</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/styles.css">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Administrador</h1>
+
+<p>Panel de gestión Hotel Quinta Dalam</p>
+
+<div class="login-box">
+
+<input type="text" id="usuario" placeholder="Usuario">
+
+<input type="password" id="password" placeholder="Contraseña">
+
+<button onclick="loginAdmin()">
+Ingresar
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="js/login.js"></script>
+
+<script>
+window.addEventListener("scroll", function() {
+const header = document.querySelector(".header");
+header.classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Dashboard | Hotel Quinta Dalam</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="css/styles.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<header class="header">
+
+<nav class="nav">
+
+<div class="logo">
+HOTEL QUINTA DALAM
+</div>
+
+<ul class="menu">
+
+<li><a href="admin.html">Administrador</a></li>
+<li><a href="dashboard.html" class="active">Dashboard</a></li>
+<li><a href="index.html">Inicio</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Panel de Control</h1>
+
+<p>Administración y monitoreo del Hotel Quinta Dalam</p>
+
+</div>
+
+</section>
+
+<section class="admin-tab">
+
+<div class="container">
+
+<h2>Estadísticas Generales</h2>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<h3 id="statReservas">0</h3>
+
+<p>Reservas Totales</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3 id="statHabitaciones">0</h3>
+
+<p>Habitaciones Registradas</p>
+
+</div>
+
+<div class="stat-card">
+
+<h3 id="statServicios">0</h3>
+
+<p>Servicios Disponibles</p>
+
+</div>
+
+</div>
+
+<canvas id="graficaReservas"></canvas>
+
+</div>
+
+</section>
+
+<section class="admin-tab">
+
+<div class="container">
+
+<h2>Reservas Recibidas</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Nombre</th>
+<th>Correo</th>
+<th>Teléfono</th>
+<th>Habitación</th>
+<th>Entrada</th>
+<th>Salida</th>
+<th>Acción</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tablaReservas"></tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<p>© 2026 Hotel Quinta Dalam</p>
+
+</footer>
+
+<script src="js/dashboard.js"></script>
+
+<script>
+window.addEventListener("scroll", function() {
+const header = document.querySelector(".header");
+header.classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
+
+</body>
+</html>
