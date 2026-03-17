@@ -225,13 +225,6 @@ mostrarReservas()
 }
 
 
-
-
-
-
-
-/* DASHBOARD */
-
 function crearGrafica(){
 
 let reservas = JSON.parse(localStorage.getItem("reservas")) || []
