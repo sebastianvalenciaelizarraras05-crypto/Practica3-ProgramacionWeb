@@ -5,8 +5,6 @@ e.preventDefault();
 const usuario = document.getElementById("usuario").value;
 const password = document.getElementById("password").value;
 
-/* credenciales del administrador */
-
 if(usuario === "admin" && password === "1234"){
 
 window.location.href = "administrador.html";
