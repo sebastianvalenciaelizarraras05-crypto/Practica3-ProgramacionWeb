@@ -12,5 +12,4 @@ let texto = h.innerText.toLowerCase()
 h.style.display = texto.includes(filtro) ? "block" : "none"
 
 })
-
 })
