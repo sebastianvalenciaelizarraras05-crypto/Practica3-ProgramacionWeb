@@ -79,11 +79,8 @@ data:[reservas.length],
 backgroundColor:"#C7A88A"
 
 }]
-
 }
-
 })
-
 }
 
 function actualizarStats(){
