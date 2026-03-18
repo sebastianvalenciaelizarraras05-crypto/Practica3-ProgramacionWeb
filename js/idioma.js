@@ -39,3 +39,39 @@ footerTexto: "© 2026 Hotel Quinta Dalam - All rights reserved"
 }
 
 };
+
+/* CAMBIAR IDIOMA */
+
+function cambiarIdioma(idioma){
+
+localStorage.setItem("idioma", idioma);
+aplicarIdioma(idioma);
+
+}
+
+/* APLICAR IDIOMA */
+
+function aplicarIdioma(idioma){
+
+const traduccion = textos[idioma];
+
+for (let key in traduccion){
+
+let elemento = document.getElementById(key);
+
+if(elemento){
+elemento.innerHTML = traduccion[key];
+}
+
+}
+
+}
+
+/* CARGAR AL ENTRAR */
+
+document.addEventListener("DOMContentLoaded", function(){
+
+const idiomaGuardado = localStorage.getItem("idioma") || "es";
+aplicarIdioma(idiomaGuardado);
+
+});
