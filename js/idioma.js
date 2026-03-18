@@ -60,7 +60,15 @@ for (let key in traduccion){
 let elemento = document.getElementById(key);
 
 if(elemento){
-elemento.innerHTML = traduccion[key];
+
+// 👇 Si tiene icono, lo respeta
+if(elemento.querySelector("i")){
+let icono = elemento.querySelector("i").outerHTML;
+elemento.innerHTML = icono + " " + traduccion[key];
+}else{
+elemento.textContent = traduccion[key];
+}
+
 }
 
 }
