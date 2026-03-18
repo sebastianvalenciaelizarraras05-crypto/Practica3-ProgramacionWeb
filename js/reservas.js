@@ -14,14 +14,12 @@ const entrada=document.querySelector("#entrada").value;
 const salida=document.querySelector("#salida").value;
 
 const reserva={
-
 nombre,
 correo,
 telefono,
 habitacion,
 entrada,
 salida
-
 };
 
 let reservas=JSON.parse(localStorage.getItem("reservas"))||[];
