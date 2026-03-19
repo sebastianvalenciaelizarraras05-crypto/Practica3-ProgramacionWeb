@@ -332,24 +332,23 @@ btnReservarM: "🛎 Book",
 btnVolverM: "← Back",
 
 /* HABITACION FAMILIAR */
-tituloFamiliar: "Habitación Familiar",
-subtituloFamiliar: "Espacio amplio para compartir momentos inolvidables.",
+tituloFamiliar: "Family Room",
+subtituloFamiliar: "Spacious environment to share unforgettable moments.",
 
-tituloDescripcionF: "Descripción",
-tituloCaracteristicasF: "Características",
+tituloDescripcionF: "Description",
+tituloCaracteristicasF: "Features",
 
-descFamiliarFull: "La Habitación Familiar está pensada para brindar amplitud y comodidad a grupos o familias.",
+descFamiliarFull: "The Family Room is designed to provide space and comfort for groups or families. Its layout allows everyone to enjoy a pleasant and relaxing stay with all the necessary amenities.",
 
-fcar1: "Dos camas matrimoniales",
-fcar2: "Baño privado amplio",
-fcar3: "WiFi de alta velocidad",
-fcar4: "Televisión LED",
-fcar5: "Aire acondicionado",
-fcar6: "Espacio amplio para equipaje",
+fcar1: "Two double beds",
+fcar2: "Spacious private bathroom",
+fcar3: "High-speed WiFi",
+fcar4: "LED TV",
+fcar5: "Air conditioning",
+fcar6: "Large luggage space",
 
-btnReservarF: "🛎 Reservar",
-btnVolverF: "← Volver",
-
+btnReservarF: "🛎 Book",
+btnVolverF: "← Back",
 
 
 /* CONTACT */
@@ -532,26 +531,23 @@ setText("btnReservarM", t.btnReservarM);
 setText("btnVolverM", t.btnVolverM);
 
 /* HABITACION FAMILIAR */
-if(document.getElementById("tituloFamiliar")){
+setText("tituloFamiliar", t.tituloFamiliar);
+setText("subtituloFamiliar", t.subtituloFamiliar);
 
-    setText("tituloFamiliar", t.tituloFamiliar);
-    setText("subtituloFamiliar", t.subtituloFamiliar);
+setText("tituloDescripcionF", t.tituloDescripcionF);
+setText("tituloCaracteristicasF", t.tituloCaracteristicasF);
 
-    setText("tituloDescripcionF", t.tituloDescripcionF);
-    setText("tituloCaracteristicasF", t.tituloCaracteristicasF);
+setText("descFamiliarFull", t.descFamiliarFull);
 
-    setText("descFamiliarFull", t.descFamiliarFull);
+setText("fcar1", t.fcar1);
+setText("fcar2", t.fcar2);
+setText("fcar3", t.fcar3);
+setText("fcar4", t.fcar4);
+setText("fcar5", t.fcar5);
+setText("fcar6", t.fcar6);
 
-    setText("fcar1", t.fcar1);
-    setText("fcar2", t.fcar2);
-    setText("fcar3", t.fcar3);
-    setText("fcar4", t.fcar4);
-    setText("fcar5", t.fcar5);
-    setText("fcar6", t.fcar6);
-
-    setText("btnReservarF", t.btnReservarF);
-    setText("btnVolverF", t.btnVolverF);
-}
+setText("btnReservarF", t.btnReservarF);
+setText("btnVolverF", t.btnVolverF);
 
 /* DASHBOARD */
 setText("tituloDashboard", t.tituloDashboard);
