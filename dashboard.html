@@ -1,83 +1,68 @@
 <!DOCTYPE html>
+
 <html lang="es">
 
 <head>
-
 <meta charset="UTF-8">
 <title>Dashboard | Hotel Quinta Dalam</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <link rel="stylesheet" href="css/styles.css">
-
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 </head>
 
 <body>
 
 <header class="header">
-
 <nav class="nav">
 
-<div class="logo">
-HOTEL QUINTA DALAM
+<div class="logo">HOTEL QUINTA DALAM</div>
+
+<div class="idioma">
+<button onclick="cambiarIdioma('es')">ES</button>
+<button onclick="cambiarIdioma('en')">EN</button>
 </div>
 
 <ul class="menu">
-
-<li><a href="admin.html">Administrador</a></li>
-<li><a href="dashboard.html" class="active">Dashboard</a></li>
-<li><a href="index.html">Inicio</a></li>
-
+<li><a href="admin.html" id="menuAdmin">Administrador</a></li>
+<li><a href="dashboard.html" class="active" id="menuDashboard">Dashboard</a></li>
+<li><a href="index.html" id="menuInicio">Inicio</a></li>
 </ul>
 
 </nav>
-
 </header>
 
 <section class="hero">
-
 <div class="hero-content">
 
-<h1>Panel de Control</h1>
+<h1 id="tituloDashboard">Panel de Control</h1>
 
-<p>Administración y monitoreo del Hotel Quinta Dalam</p>
+<p id="subtituloDashboard">
+Administración y monitoreo del Hotel Quinta Dalam
+</p>
 
 </div>
-
 </section>
 
 <section class="admin-tab">
-
 <div class="container">
 
-<h2>Estadísticas Generales</h2>
+<h2 id="tituloStats">Estadísticas Generales</h2>
 
 <div class="stats-grid">
 
 <div class="stat-card">
-
 <h3 id="statReservas">0</h3>
-
-<p>Reservas Totales</p>
-
+<p id="labelReservas">Reservas Totales</p>
 </div>
 
 <div class="stat-card">
-
 <h3 id="statHabitaciones">0</h3>
-
-<p>Habitaciones Registradas</p>
-
+<p id="labelHabitaciones">Habitaciones Registradas</p>
 </div>
 
 <div class="stat-card">
-
 <h3 id="statServicios">0</h3>
-
-<p>Servicios Disponibles</p>
-
+<p id="labelServicios">Servicios Disponibles</p>
 </div>
 
 </div>
@@ -85,31 +70,25 @@ HOTEL QUINTA DALAM
 <canvas id="graficaReservas"></canvas>
 
 </div>
-
 </section>
 
 <section class="admin-tab">
-
 <div class="container">
 
-<h2>Reservas Recibidas</h2>
+<h2 id="tituloTablaReservas">Reservas Recibidas</h2>
 
 <table>
 
 <thead>
-
 <tr>
-
-<th>Nombre</th>
-<th>Correo</th>
-<th>Teléfono</th>
-<th>Habitación</th>
-<th>Entrada</th>
-<th>Salida</th>
-<th>Acción</th>
-
+<th id="thNombre">Nombre</th>
+<th id="thCorreo">Correo</th>
+<th id="thTelefono">Teléfono</th>
+<th id="thHabitacion">Habitación</th>
+<th id="thEntrada">Entrada</th>
+<th id="thSalida">Salida</th>
+<th id="thAccion">Acción</th>
 </tr>
-
 </thead>
 
 <tbody id="tablaReservas"></tbody>
@@ -117,13 +96,10 @@ HOTEL QUINTA DALAM
 </table>
 
 </div>
-
 </section>
 
 <footer class="footer">
-
-<p>© 2026 Hotel Quinta Dalam</p>
-
+<p id="footerTexto">© 2026 Hotel Quinta Dalam</p>
 </footer>
 
 <script src="js/dashboard.js"></script>
@@ -134,6 +110,8 @@ const header = document.querySelector(".header");
 header.classList.toggle("scrolled", window.scrollY > 50);
 });
 </script>
+
+<script src="js/idioma.js"></script>
 
 </body>
 </html>

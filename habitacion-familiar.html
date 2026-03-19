@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -11,20 +12,31 @@
 <header class="header">
 <nav class="nav">
 <div class="logo">HOTEL QUINTA DALAM</div>
+
+<div class="idioma">
+<button onclick="cambiarIdioma('es')">ES</button>
+<button onclick="cambiarIdioma('en')">EN</button>
+</div>
+
 <ul class="menu">
-<li><a href="index.html">Inicio</a></li>
-<li><a href="habitaciones.html" class="active">Habitaciones</a></li>
-<li><a href="reservaciones.html">Reservaciones</a></li>
-<li><a href="contacto.html">Contacto</a></li>
-<li><a href="mision-vision.html">Misión & Visión</a></li>
+<li><a href="index.html" id="menuInicio">Inicio</a></li>
+<li><a href="habitaciones.html" class="active" id="menuHabitaciones">Habitaciones</a></li>
+<li><a href="reservaciones.html" id="menuReservaciones">Reservaciones</a></li>
+<li><a href="contacto.html" id="menuContacto">Contacto</a></li>
+<li><a href="mision-vision.html" id="menuMision">Misión & Visión</a></li>
 </ul>
 </nav>
 </header>
 
 <section class="hero">
 <div class="hero-content">
-<h1>Habitación Familiar</h1>
-<p>Espacio amplio para compartir momentos inolvidables.</p>
+
+<h1 id="tituloFamiliar">Habitación Familiar</h1>
+
+<p id="subtituloFamiliar">
+Espacio amplio para compartir momentos inolvidables.
+</p>
+
 </div>
 </section>
 
@@ -33,37 +45,42 @@
 
 <img src="imagenes/familiar.png" alt="Habitación Familiar">
 
-<h2>Descripción</h2>
-<p>
+<h2 id="tituloDescripcionF">Descripción</h2>
+
+<p id="descFamiliarFull">
 La Habitación Familiar está pensada para brindar amplitud y comodidad
 a grupos o familias. Su diseño espacioso permite disfrutar de privacidad
 y convivencia en un mismo entorno elegante.
 </p>
 
-<h2>Características</h2>
+<h2 id="tituloCaracteristicasF">Características</h2>
+
 <ul>
-<li>Dos camas matrimoniales</li>
-<li>Baño privado amplio</li>
-<li>WiFi de alta velocidad</li>
-<li>Televisión LED</li>
-<li>Aire acondicionado</li>
-<li>Espacio amplio para equipaje</li>
+<li id="fcar1">Dos camas matrimoniales</li>
+<li id="fcar2">Baño privado amplio</li>
+<li id="fcar3">WiFi de alta velocidad</li>
+<li id="fcar4">Televisión LED</li>
+<li id="fcar5">Aire acondicionado</li>
+<li id="fcar6">Espacio amplio para equipaje</li>
 </ul>
 
 <div class="botones-habitacion">
-<a href="reservaciones.html?habitacion=Familiar" class="btn">
+
+<a href="reservaciones.html?habitacion=Familiar" class="btn" id="btnReservarF">
 🛎 Reservar
 </a>
-<a href="habitaciones.html" class="btn-secundario">
+
+<a href="habitaciones.html" class="btn-secundario" id="btnVolverF">
 ← Volver
 </a>
+
 </div>
 
 </div>
 </section>
 
 <footer class="footer">
-<p>© 2026 Hotel Quinta Dalam - Todos los derechos reservados</p>
+<p id="footerTexto">© 2026 Hotel Quinta Dalam - Todos los derechos reservados</p>
 </footer>
 
 <script>
@@ -73,28 +90,7 @@ document.querySelector(".header")
 });
 </script>
 
-<p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss"
-            alt="¡CSS Válido!" />
-    </a>
-</p>
-
-<p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-            alt="¡CSS Válido!" />
-    </a>
-</p>
-      
-<script>
-window.addEventListener("scroll", function() {
-const header = document.querySelector(".header");
-header.classList.toggle("scrolled", window.scrollY > 50);
-});
-</script>
+<script src="js/idioma.js"></script>
 
 </body>
 </html>

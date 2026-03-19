@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -10,122 +11,102 @@
 <body>
 
 <header class="header">
-    <nav class="nav">
-        <div class="logo">HOTEL QUINTA DALAM</div>
-        <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="habitaciones.html">Habitaciones</a></li>
-            <li><a href="reservaciones.html">Reservaciones</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="mision-vision.html" class="active">Misión & Visión</a></li>
-        </ul>
-    </nav>
+<nav class="nav">
+<div class="logo">HOTEL QUINTA DALAM</div>
+
+<div class="idioma">
+<button onclick="cambiarIdioma('es')">ES</button>
+<button onclick="cambiarIdioma('en')">EN</button>
+</div>
+
+<ul class="menu">
+<li><a href="index.html" id="menuInicio">Inicio</a></li>
+<li><a href="habitaciones.html" id="menuHabitaciones">Habitaciones</a></li>
+<li><a href="reservaciones.html" id="menuReservaciones">Reservaciones</a></li>
+<li><a href="contacto.html" id="menuContacto">Contacto</a></li>
+<li><a href="mision-vision.html" class="active" id="menuMision">Misión & Visión</a></li>
+</ul>
+</nav>
 </header>
 
 <!-- HERO -->
+
 <section class="hero">
-    <div class="hero-content">
-        <h1>Misión & Visión</h1>
-        <p>Compromiso, excelencia y proyección hacia el futuro.</p>
-    </div>
+<div class="hero-content">
+
+<h1 id="tituloMV">Misión & Visión</h1>
+
+<p id="subtituloMV">
+Compromiso, excelencia y proyección hacia el futuro.
+</p>
+
+</div>
 </section>
 
 <!-- MISIÓN -->
+
 <section class="section">
-    <div class="container">
-        <h2>Nuestra Misión</h2>
+<div class="container">
 
-        <p class="descripcion">
-            En Hotel Quinta Dalam nuestra misión es ofrecer una experiencia de hospedaje 
-            distinguida, donde la comodidad, el diseño contemporáneo y la atención 
-            personalizada se integren para crear momentos memorables en cada estancia.
-        </p>
+<h2 id="tituloMision">Nuestra Misión</h2>
 
-        <br><br>
+<p class="descripcion" id="mision1">
+En Hotel Quinta Dalam nuestra misión es ofrecer una experiencia de hospedaje distinguida, donde la comodidad, el diseño contemporáneo y la atención personalizada se integren para crear momentos memorables en cada estancia.
+</p>
 
-        <p class="descripcion">
-            Nos comprometemos a brindar un servicio cálido y profesional, 
-            enfocado en superar las expectativas de nuestros huéspedes mediante 
-            instalaciones de alta calidad, estándares rigurosos de limpieza, 
-            tecnología moderna y una atención que refleje respeto, hospitalidad 
-            y excelencia.
-        </p>
+<br><br>
 
-        <br><br>
+<p class="descripcion" id="mision2">
+Nos comprometemos a brindar un servicio cálido y profesional, enfocado en superar las expectativas de nuestros huéspedes mediante instalaciones de alta calidad, estándares rigurosos de limpieza, tecnología moderna y una atención que refleje respeto, hospitalidad y excelencia.
+</p>
 
-        <p class="descripcion">
-            Buscamos que cada visitante encuentre en nuestras instalaciones 
-            un espacio de tranquilidad, lujo y confianza, donde pueda disfrutar 
-            tanto de viajes de descanso como de negocios con la seguridad 
-            de estar en un entorno diseñado para su bienestar integral.
-        </p>
-    </div>
+<br><br>
+
+<p class="descripcion" id="mision3">
+Buscamos que cada visitante encuentre en nuestras instalaciones un espacio de tranquilidad, lujo y confianza, donde pueda disfrutar tanto de viajes de descanso como de negocios con la seguridad de estar en un entorno diseñado para su bienestar integral.
+</p>
+
+</div>
 </section>
 
 <!-- VISIÓN -->
+
 <section class="section">
-    <div class="container">
-        <h2>Nuestra Visión</h2>
+<div class="container">
 
-        <p class="descripcion">
-            Aspiramos a consolidarnos como un referente en hospitalidad boutique 
-            a nivel regional y nacional, destacándonos por nuestro diseño arquitectónico, 
-            la calidad de nuestros servicios y la innovación constante en la experiencia del huésped.
-        </p>
+<h2 id="tituloVision">Nuestra Visión</h2>
 
-        <br><br>
+<p class="descripcion" id="vision1">
+Aspiramos a consolidarnos como un referente en hospitalidad boutique a nivel regional y nacional, destacándonos por nuestro diseño arquitectónico, la calidad de nuestros servicios y la innovación constante en la experiencia del huésped.
+</p>
 
-        <p class="descripcion">
-            Nuestra visión es proyectar a Hotel Quinta Dalam como un símbolo de 
-            elegancia, modernidad y excelencia operativa, posicionándonos como 
-            una de las opciones preferidas para quienes buscan una estancia 
-            sofisticada en un entorno armonioso.
-        </p>
+<br><br>
 
-        <br><br>
+<p class="descripcion" id="vision2">
+Nuestra visión es proyectar a Hotel Quinta Dalam como un símbolo de elegancia, modernidad y excelencia operativa, posicionándonos como una de las opciones preferidas para quienes buscan una estancia sofisticada en un entorno armonioso.
+</p>
 
-        <p class="descripcion">
-            Trabajamos con una filosofía de mejora continua, responsabilidad social 
-            y compromiso ambiental, procurando que nuestro crecimiento se base 
-            en la sostenibilidad, la ética empresarial y la satisfacción plena 
-            de quienes confían en nosotros.
-        </p>
-    </div>
+<br><br>
+
+<p class="descripcion" id="vision3">
+Trabajamos con una filosofía de mejora continua, responsabilidad social y compromiso ambiental, procurando que nuestro crecimiento se base en la sostenibilidad, la ética empresarial y la satisfacción plena de quienes confían en nosotros.
+</p>
+
+</div>
 </section>
 
 <footer class="footer">
-    <p>© 2026 Hotel Quinta Dalam - Todos los derechos reservados</p>
+<p id="footerTexto">© 2026 Hotel Quinta Dalam - Todos los derechos reservados</p>
 </footer>
 
-<script>
-window.addEventListener("scroll", function() {
-    const header = document.querySelector(".header");
-    header.classList.toggle("scrolled", window.scrollY > 50);
-});
-</script>
-
-<p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss"
-            alt="¡CSS Válido!" />
-    </a>
-</p>
-
-<p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-            alt="¡CSS Válido!" />
-    </a>
-</p>
-      
 <script>
 window.addEventListener("scroll", function() {
 const header = document.querySelector(".header");
 header.classList.toggle("scrolled", window.scrollY > 50);
 });
 </script>
+
+<script src="js/idioma.js"></script>
 
 </body>
 </html>

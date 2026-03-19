@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -12,12 +13,18 @@
 <header class="header">
 <nav class="nav">
 <div class="logo">HOTEL QUINTA DALAM</div>
+
+<div class="idioma">
+<button onclick="cambiarIdioma('es')">ES</button>
+<button onclick="cambiarIdioma('en')">EN</button>
+</div>
+
 <ul class="menu">
-<li><a href="index.html">Inicio</a></li>
-<li><a href="habitaciones.html">Habitaciones</a></li>
-<li><a href="reservaciones.html">Reservaciones</a></li>
-<li><a href="contacto.html" class="active">Contacto</a></li>
-<li><a href="mision-vision.html">Misión & Visión</a></li>
+<li><a href="index.html" id="menuInicio">Inicio</a></li>
+<li><a href="habitaciones.html" id="menuHabitaciones">Habitaciones</a></li>
+<li><a href="reservaciones.html" id="menuReservaciones">Reservaciones</a></li>
+<li><a href="contacto.html" class="active" id="menuContacto">Contacto</a></li>
+<li><a href="mision-vision.html" id="menuMision">Misión & Visión</a></li>
 </ul>
 </nav>
 </header>
@@ -26,44 +33,51 @@
 
 <section class="hero">
 <div class="hero-content">
-<h1>Contacto</h1>
-<p>Estamos para ayudarte y atender cualquier consulta.</p>
+
+<h1 id="tituloContacto">Contacto</h1>
+
+<p id="subtituloContacto">
+Estamos para ayudarte y atender cualquier consulta.
+</p>
+
 </div>
 </section>
 
 <section class="section">
 <div class="container">
 
-<h2>Información de Contacto</h2>
+<h2 id="tituloInfoContacto">Información de Contacto</h2>
 
 <div class="contacto-grid">
 
 <div class="contacto-info">
 
-<p><strong>Dirección:</strong><br>
-Michoacán, México
+<p>
+<strong id="labelDireccion">Dirección:</strong><br>
+<span id="textoDireccion">Michoacán, México</span>
 </p>
 
-<p><strong>Teléfono:</strong><br>
-+52 000 000 0000
+<p>
+<strong id="labelTelefonoContacto">Teléfono:</strong><br>
+<span id="textoTelefono">+52 000 000 0000</span>
 </p>
 
-<p><strong>Correo electrónico:</strong><br>
-contacto@hotelquintadalam.com
+<p>
+<strong id="labelCorreoContacto">Correo electrónico:</strong><br>
+<span id="textoCorreo">contacto@hotelquintadalam.com</span>
 </p>
 
 <div class="redes-sociales">
 
-<a href="https://www.facebook.com/profile.php?id=61584681841684" target="_blank" rel="noopener">
+<a href="https://www.facebook.com/profile.php?id=61584681841684" target="_blank">
 <img src="imagenes/icon-facebook.png" alt="Facebook">
 </a>
 
-<a href="https://www.instagram.com/quintadalam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==
-" target="_blank" rel="noopener">
+<a href="https://www.instagram.com/quintadalam" target="_blank">
 <img src="imagenes/icon-instagram.png" alt="Instagram">
 </a>
 
-<a href="https://www.tiktok.com/@quintadalam?lang=es" target="_blank" rel="noopener">
+<a href="https://www.tiktok.com/@quintadalam" target="_blank">
 <img src="imagenes/tiktok.png" alt="TikTok">
 </a>
 
@@ -72,9 +86,7 @@ contacto@hotelquintadalam.com
 </div>
 
 <div class="contacto-mapa">
-<iframe 
-src="https://www.google.com/maps?q=Michoacan,Mexico&amp;output=embed">
-</iframe>
+<iframe src="https://www.google.com/maps?q=Michoacan,Mexico&amp;output=embed"></iframe>
 </div>
 
 </div>
@@ -85,23 +97,23 @@ src="https://www.google.com/maps?q=Michoacan,Mexico&amp;output=embed">
 <section class="section">
 <div class="container">
 
-<h2>Horario de Atención</h2>
+<h2 id="tituloHorario">Horario de Atención</h2>
 
 <div class="horario-box">
 
 <div class="horario-item">
-<h3>Recepción</h3>
-<p>Lunes a Domingo<br>24 horas</p>
+<h3 id="horarioRecepcion">Recepción</h3>
+<p id="horarioRecepcionTexto">Lunes a Domingo<br>24 horas</p>
 </div>
 
 <div class="horario-item">
-<h3>Restaurante</h3>
-<p>Lunes a Domingo<br>07:00 a.m. – 10:00 p.m.</p>
+<h3 id="horarioRestaurante">Restaurante</h3>
+<p id="horarioRestauranteTexto">Lunes a Domingo<br>07:00 a.m. – 10:00 p.m.</p>
 </div>
 
 <div class="horario-item">
-<h3>Atención Telefónica</h3>
-<p>Lunes a Domingo<br>08:00 a.m. – 11:00 p.m.</p>
+<h3 id="horarioTelefono">Atención Telefónica</h3>
+<p id="horarioTelefonoTexto">Lunes a Domingo<br>08:00 a.m. – 11:00 p.m.</p>
 </div>
 
 </div>
@@ -112,31 +124,17 @@ src="https://www.google.com/maps?q=Michoacan,Mexico&amp;output=embed">
 </main>
 
 <footer class="footer">
-<p>© 2026 Hotel Quinta Dalam - Todos los derechos reservados</p>
+<p id="footerTexto">© 2026 Hotel Quinta Dalam - Todos los derechos reservados</p>
 </footer>
 
-<p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss"
-            alt="¡CSS Válido!" />
-    </a>
-</p>
-
-<p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-            alt="¡CSS Válido!" />
-    </a>
-</p>
-      
 <script>
 window.addEventListener("scroll", function() {
 const header = document.querySelector(".header");
 header.classList.toggle("scrolled", window.scrollY > 50);
 });
 </script>
+
+<script src="js/idioma.js"></script>
 
 </body>
 </html>

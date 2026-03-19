@@ -83,8 +83,23 @@ color:white;
 }
 
 .hero-content{
-    animation:fadeUp 1.5s ease forwards;
-    opacity:0;
+   /* animation:fadeUp 1.5s ease forwards;*/
+    opacity:1; /* 🔥 ESTE ES EL FIX */
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:48px;
+    text-shadow:2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.hero-content p{
+    color:#F5EDE4;
 }
 
 @keyframes fadeUp{
@@ -1671,3 +1686,26 @@ background:rgba(0,0,0,0.4);
 backdrop-filter:blur(8px);
 box-shadow:0 8px 25px rgba(0,0,0,0.6);
 }
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.hero-content p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.hero-content{
+    opacity:1 !important;
+    position:relative;
+    z-index:10;
+    color:white !important;
+}
+
+.hero-content h1,
+.hero-content p{
+    color:white !important;
+}
+

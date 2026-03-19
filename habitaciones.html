@@ -12,12 +12,18 @@
 <header class="header">
 <nav class="nav">
 <div class="logo">HOTEL QUINTA DALAM</div>
+
+<div class="idioma">
+<button onclick="cambiarIdioma('es')">ES</button>
+<button onclick="cambiarIdioma('en')">EN</button>
+</div>
+
 <ul class="menu">
-<li><a href="index.html">Inicio</a></li>
-<li><a href="habitaciones.html" class="active">Habitaciones</a></li>
-<li><a href="reservaciones.html">Reservaciones</a></li>
-<li><a href="contacto.html">Contacto</a></li>
-<li><a href="mision-vision.html">Misión & Visión</a></li>
+<li><a href="index.html" id="menuInicio">Inicio</a></li>
+<li><a href="habitaciones.html" class="active" id="menuHabitaciones">Habitaciones</a></li>
+<li><a href="reservaciones.html" id="menuReservaciones">Reservaciones</a></li>
+<li><a href="contacto.html" id="menuContacto">Contacto</a></li>
+<li><a href="mision-vision.html" id="menuMision">Misión & Visión</a></li>
 </ul>
 </nav>
 </header>
@@ -26,47 +32,52 @@
 
 <section class="hero">
 <div class="hero-content">
-<h1>Habitaciones</h1>
-<p>Elegancia, confort y descanso en cada espacio.</p>
+
+<h1 id="tituloHabitaciones">Habitaciones</h1>
+
+<p id="subtituloHabitaciones">
+Elegancia, confort y descanso en cada espacio.
+</p>
+
 </div>
 </section>
 
 <section class="section">
 <div class="container">
 
-<h2>Nuestras Habitaciones</h2>
+<h2 id="tituloListaHabitaciones">Nuestras Habitaciones</h2>
 
 <div class="habitaciones-grid">
 
 <a href="habitacion-sencilla.html" class="habitacion-card">
 <img src="imagenes/sencilla.webp" alt="Habitación Sencilla">
 <div class="habitacion-info">
-<h3>Habitación Sencilla</h3>
-<p>Ideal para viajes individuales.</p>
+<h3 id="habSencilla">Habitación Sencilla</h3>
+<p id="descSencilla">Ideal para viajes individuales.</p>
 </div>
 </a>
 
 <a href="habitacion-doble.html" class="habitacion-card">
 <img src="imagenes/doble.png" alt="Habitación Doble">
 <div class="habitacion-info">
-<h3>Habitación Doble</h3>
-<p>Perfecta para compartir comodidad.</p>
+<h3 id="habDoble">Habitación Doble</h3>
+<p id="descDoble">Perfecta para compartir comodidad.</p>
 </div>
 </a>
 
 <a href="habitacion-matrimonial.html" class="habitacion-card">
 <img src="imagenes/matrimonial.png" alt="Habitación Matrimonial">
 <div class="habitacion-info">
-<h3>Habitación Matrimonial</h3>
-<p>Espacio íntimo y sofisticado.</p>
+<h3 id="habMatrimonial">Habitación Matrimonial</h3>
+<p id="descMatrimonial">Espacio íntimo y sofisticado.</p>
 </div>
 </a>
 
 <a href="habitacion-familiar.html" class="habitacion-card">
 <img src="imagenes/familiar.png" alt="Habitación Familiar">
 <div class="habitacion-info">
-<h3>Habitación Familiar</h3>
-<p>Amplia y cómoda para toda la familia.</p>
+<h3 id="habFamiliar">Habitación Familiar</h3>
+<p id="descFamiliar">Amplia y cómoda para toda la familia.</p>
 </div>
 </a>
 
@@ -78,31 +89,19 @@
 </main>
 
 <footer class="footer">
-<p>© 2026 Hotel Quinta Dalam</p>
+<p id="footerTexto">© 2026 Hotel Quinta Dalam</p>
 </footer>
 
-<p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss"
-            alt="¡CSS Válido!" />
-    </a>
-</p>
-
-<p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-            alt="¡CSS Válido!" />
-    </a>
-</p>
-      
+<!-- SCRIPT SCROLL -->
 <script>
 window.addEventListener("scroll", function() {
 const header = document.querySelector(".header");
 header.classList.toggle("scrolled", window.scrollY > 50);
 });
 </script>
+
+<!-- SCRIPT IDIOMA -->
+<script src="js/idioma.js"></script>
 
 </body>
 </html>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 
 <head>
@@ -24,21 +25,26 @@
 HOTEL QUINTA DALAM
 </div>
 
+<div class="idioma">
+<button onclick="cambiarIdioma('es')">ES</button>
+<button onclick="cambiarIdioma('en')">EN</button>
+</div>
+
 <ul class="menu admin-menu">
 
-<li class="tab-btn active" onclick="mostrarTab('dashboard', this)">
+<li class="tab-btn active" id="menuDashboard" onclick="mostrarTab('dashboard', this)">
 Dashboard
 </li>
 
-<li class="tab-btn" onclick="mostrarTab('servicios', this)">
+<li class="tab-btn" id="menuServicios" onclick="mostrarTab('servicios', this)">
 Servicios
 </li>
 
-<li class="tab-btn" onclick="mostrarTab('habitaciones', this)">
+<li class="tab-btn" id="menuHabitaciones" onclick="mostrarTab('habitaciones', this)">
 Habitaciones
 </li>
 
-<li class="tab-btn" onclick="mostrarTab('reservas', this)">
+<li class="tab-btn" id="menuReservas" onclick="mostrarTab('reservas', this)">
 Reservas
 </li>
 
@@ -52,9 +58,9 @@ Reservas
 
 <div class="hero-content">
 
-<h1>Panel Administrador</h1>
+<h1 id="tituloAdmin">Panel Administrador</h1>
 
-<p>Gestión completa del Hotel Quinta Dalam</p>
+<p id="subtituloAdmin">Gestión completa del Hotel Quinta Dalam</p>
 
 </div>
 
@@ -66,7 +72,7 @@ Reservas
 
 <div class="container">
 
-<h2>Estadísticas del Hotel</h2>
+<h2 id="tituloDashboard">Estadísticas del Hotel</h2>
 
 <canvas id="graficaReservas"></canvas>
 
@@ -80,12 +86,11 @@ Reservas
 
 <div class="container">
 
-<h2>Administrar Servicios</h2>
-<h2>Gestión de Servicios del Hotel</h2>
+<h2 id="tituloServiciosAdmin">Administrar Servicios</h2>
 
 <input type="text" id="servicio" placeholder="Nuevo servicio">
 
-<button onclick="agregarServicio()">
+<button id="btnAgregarServicio" onclick="agregarServicio()">
 Agregar Servicio
 </button>
 
@@ -95,8 +100,8 @@ Agregar Servicio
 
 <tr>
 
-<th>Servicio</th>
-<th>Acción</th>
+<th id="thServicio">Servicio</th>
+<th id="thAccion1">Acción</th>
 
 </tr>
 
@@ -116,14 +121,13 @@ Agregar Servicio
 
 <div class="container">
 
-<h2>Administrar Habitaciones</h2>
-<h2>Gestión de Servicios del Hotel</h2>
+<h2 id="tituloHabitacionesAdmin">Administrar Habitaciones</h2>
 
 <input type="text" id="nombreHabitacion" placeholder="Nombre">
 
 <input type="number" id="precioHabitacion" placeholder="Precio">
 
-<button onclick="agregarHabitacion()">
+<button id="btnAgregarHabitacion" onclick="agregarHabitacion()">
 Agregar Habitación
 </button>
 
@@ -133,9 +137,9 @@ Agregar Habitación
 
 <tr>
 
-<th>Habitación</th>
-<th>Precio</th>
-<th>Acción</th>
+<th id="thHabitacion">Habitación</th>
+<th id="thPrecio">Precio</th>
+<th id="thAccion2">Acción</th>
 
 </tr>
 
@@ -155,7 +159,7 @@ Agregar Habitación
 
 <div class="container">
 
-<h2>Reservas Recibidas</h2>
+<h2 id="tituloReservasAdmin">Reservas Recibidas</h2>
 
 <table>
 
@@ -163,13 +167,13 @@ Agregar Habitación
 
 <tr>
 
-<th>Nombre</th>
-<th>Correo</th>
-<th>Teléfono</th>
-<th>Habitación</th>
-<th>Entrada</th>
-<th>Salida</th>
-<th>Acción</th>
+<th id="thNombre">Nombre</th>
+<th id="thCorreo">Correo</th>
+<th id="thTelefono">Teléfono</th>
+<th id="thHabitacion2">Habitación</th>
+<th id="thEntrada">Entrada</th>
+<th id="thSalida">Salida</th>
+<th id="thAccion3">Acción</th>
 
 </tr>
 
@@ -191,6 +195,8 @@ const header = document.querySelector(".header");
 header.classList.toggle("scrolled", window.scrollY > 50);
 });
 </script>
+
+<script src="js/idioma.js"></script>
 
 </body>
 </html>

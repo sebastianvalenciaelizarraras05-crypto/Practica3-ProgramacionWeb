@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -11,20 +12,31 @@
 <header class="header">
 <nav class="nav">
 <div class="logo">HOTEL QUINTA DALAM</div>
+
+<div class="idioma">
+<button onclick="cambiarIdioma('es')">ES</button>
+<button onclick="cambiarIdioma('en')">EN</button>
+</div>
+
 <ul class="menu">
-<li><a href="index.html">Inicio</a></li>
-<li><a href="habitaciones.html" class="active">Habitaciones</a></li>
-<li><a href="reservaciones.html">Reservaciones</a></li>
-<li><a href="contacto.html">Contacto</a></li>
-<li><a href="mision-vision.html">Misión & Visión</a></li>
+<li><a href="index.html" id="menuInicio">Inicio</a></li>
+<li><a href="habitaciones.html" class="active" id="menuHabitaciones">Habitaciones</a></li>
+<li><a href="reservaciones.html" id="menuReservaciones">Reservaciones</a></li>
+<li><a href="contacto.html" id="menuContacto">Contacto</a></li>
+<li><a href="mision-vision.html" id="menuMision">Misión & Visión</a></li>
 </ul>
 </nav>
 </header>
 
 <section class="hero">
 <div class="hero-content">
-<h1>Habitación Matrimonial</h1>
-<p>Un espacio íntimo para momentos inolvidables.</p>
+
+<h1 id="tituloMatrimonial">Habitación Matrimonial</h1>
+
+<p id="subtituloMatrimonial">
+Un espacio íntimo para momentos inolvidables.
+</p>
+
 </div>
 </section>
 
@@ -33,37 +45,42 @@
 
 <img src="imagenes/matrimonial.png" alt="Habitación Matrimonial">
 
-<h2>Descripción</h2>
-<p>
+<h2 id="tituloDescripcionM">Descripción</h2>
+
+<p id="descMatrimonialFull">
 La Habitación Matrimonial combina elegancia y privacidad.
 Ideal para parejas que buscan confort superior en un ambiente
 sofisticado con iluminación cálida y acabados modernos.
 </p>
 
-<h2>Características</h2>
+<h2 id="tituloCaracteristicasM">Características</h2>
+
 <ul>
-<li>Cama matrimonial tamaño queen</li>
-<li>Baño privado elegante</li>
-<li>WiFi de alta velocidad</li>
-<li>Televisión pantalla plana</li>
-<li>Aire acondicionado</li>
-<li>Servicio a la habitación</li>
+<li id="mcar1">Cama matrimonial tamaño queen</li>
+<li id="mcar2">Baño privado elegante</li>
+<li id="mcar3">WiFi de alta velocidad</li>
+<li id="mcar4">Televisión pantalla plana</li>
+<li id="mcar5">Aire acondicionado</li>
+<li id="mcar6">Servicio a la habitación</li>
 </ul>
 
 <div class="botones-habitacion">
-<a href="reservaciones.html?habitacion=Matrimonial" class="btn">
+
+<a href="reservaciones.html?habitacion=Matrimonial" class="btn" id="btnReservarM">
 🛎 Reservar
 </a>
-<a href="habitaciones.html" class="btn-secundario">
+
+<a href="habitaciones.html" class="btn-secundario" id="btnVolverM">
 ← Volver
 </a>
+
 </div>
 
 </div>
 </section>
 
 <footer class="footer">
-<p>© 2026 Hotel Quinta Dalam - Todos los derechos reservados</p>
+<p id="footerTexto">© 2026 Hotel Quinta Dalam - Todos los derechos reservados</p>
 </footer>
 
 <script>
@@ -73,28 +90,7 @@ document.querySelector(".header")
 });
 </script>
 
-<p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss"
-            alt="¡CSS Válido!" />
-    </a>
-</p>
-
-<p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-            alt="¡CSS Válido!" />
-    </a>
-</p>
-      
-<script>
-window.addEventListener("scroll", function() {
-const header = document.querySelector(".header");
-header.classList.toggle("scrolled", window.scrollY > 50);
-});
-</script>
+<script src="js/idioma.js"></script>
 
 </body>
 </html>

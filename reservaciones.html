@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -12,12 +13,18 @@
 <header class="header">
 <nav class="nav">
 <div class="logo">HOTEL QUINTA DALAM</div>
+
+<div class="idioma">
+<button onclick="cambiarIdioma('es')">ES</button>
+<button onclick="cambiarIdioma('en')">EN</button>
+</div>
+
 <ul class="menu">
-<li><a href="index.html">Inicio</a></li>
-<li><a href="habitaciones.html">Habitaciones</a></li>
-<li><a href="reservaciones.html" class="active">Reservaciones</a></li>
-<li><a href="contacto.html">Contacto</a></li>
-<li><a href="mision-vision.html">Misión & Visión</a></li>
+<li><a href="index.html" id="menuInicio">Inicio</a></li>
+<li><a href="habitaciones.html" id="menuHabitaciones">Habitaciones</a></li>
+<li><a href="reservaciones.html" class="active" id="menuReservaciones">Reservaciones</a></li>
+<li><a href="contacto.html" id="menuContacto">Contacto</a></li>
+<li><a href="mision-vision.html" id="menuMision">Misión & Visión</a></li>
 </ul>
 </nav>
 </header>
@@ -26,70 +33,75 @@
 
 <section class="hero">
 <div class="hero-content">
-<h1>Reservaciones</h1>
-<p>Reserva tu experiencia exclusiva en Hotel Quinta Dalam.</p>
+
+<h1 id="tituloReservaciones">Reservaciones</h1>
+
+<p id="subtituloReservaciones">
+Reserva tu experiencia exclusiva en Hotel Quinta Dalam.
+</p>
+
 </div>
 </section>
 
 <section class="section">
 <div class="container">
 
-<h2>Formulario de Reserva</h2>
+<h2 id="tituloFormulario">Formulario de Reserva</h2>
 
 <form class="form-reserva" action="#" method="post">
 
 <div class="form-grid">
 
 <div>
-<label for="nombre">Nombre completo</label>
+<label id="labelNombre" for="nombre">Nombre completo</label>
 <input type="text" id="nombre" name="nombre" required>
 </div>
 
 <div>
-<label for="correo">Correo electrónico</label>
+<label id="labelCorreo" for="correo">Correo electrónico</label>
 <input type="email" id="correo" name="correo" required>
 </div>
 
 <div>
-<label for="telefono">Teléfono</label>
+<label id="labelTelefono" for="telefono">Teléfono</label>
 <input type="tel" id="telefono" name="telefono" required>
 </div>
 
 <div>
-<label for="habitacion">Tipo de habitación</label>
+<label id="labelHabitacion" for="habitacion">Tipo de habitación</label>
 <select id="habitacion" name="habitacion" required>
-<option value="">Seleccione una opción</option>
-<option value="sencilla">Habitación Sencilla</option>
-<option value="doble">Habitación Doble</option>
-<option value="matrimonial">Habitación Matrimonial</option>
-<option value="familiar">Habitación Familiar</option>
+<option value="" id="optDefault">Seleccione una opción</option>
+<option value="sencilla" id="optSencilla">Habitación Sencilla</option>
+<option value="doble" id="optDoble">Habitación Doble</option>
+<option value="matrimonial" id="optMatrimonial">Habitación Matrimonial</option>
+<option value="familiar" id="optFamiliar">Habitación Familiar</option>
 </select>
 </div>
 
 <div>
-<label for="entrada">Fecha de entrada</label>
+<label id="labelEntrada" for="entrada">Fecha de entrada</label>
 <input type="date" id="entrada" name="entrada" required>
 </div>
 
 <div>
-<label for="salida">Fecha de salida</label>
+<label id="labelSalida" for="salida">Fecha de salida</label>
 <input type="date" id="salida" name="salida" required>
 </div>
 
 <div>
-<label for="adultos">Número de adultos</label>
+<label id="labelAdultos" for="adultos">Número de adultos</label>
 <input type="number" id="adultos" name="adultos" min="1" max="10" required>
 </div>
 
 <div>
-<label for="ninos">Número de niños</label>
+<label id="labelNinos" for="ninos">Número de niños</label>
 <input type="number" id="ninos" name="ninos" min="0" max="10">
 </div>
 
 </div>
 
 <div class="form-boton">
-<button type="submit">Confirmar Reserva</button>
+<button type="submit" id="btnConfirmar">Confirmar Reserva</button>
 </div>
 
 </form>
@@ -100,25 +112,9 @@
 </main>
 
 <footer class="footer">
-<p>© 2026 Hotel Quinta Dalam - Todos los derechos reservados</p>
+<p id="footerTexto">© 2026 Hotel Quinta Dalam - Todos los derechos reservados</p>
 </footer>
 
-<p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss"
-            alt="¡CSS Válido!" />
-    </a>
-</p>
-
-<p>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-            alt="¡CSS Válido!" />
-    </a>
-</p>
-      
 <script src="js/reservas.js"></script>
 
 <script>
@@ -127,6 +123,8 @@ const header = document.querySelector(".header");
 header.classList.toggle("scrolled", window.scrollY > 50);
 });
 </script>
+
+<script src="js/idioma.js"></script>
 
 </body>
 </html>

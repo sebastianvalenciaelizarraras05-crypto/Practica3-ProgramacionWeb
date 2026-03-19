@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 
@@ -20,6 +21,7 @@
 
 <header class="header">
 <nav class="nav">
+
 <div class="logo">HOTEL QUINTA DALAM</div>
 
 <div class="idioma">
@@ -28,12 +30,13 @@
 </div>
 
 <ul class="menu">
-<li><a href="index.html" class="active">Inicio</a></li>
-<li><a href="habitaciones.html">Habitaciones</a></li>
-<li><a href="reservaciones.html">Reservaciones</a></li>
-<li><a href="contacto.html">Contacto</a></li>
-<li><a href="mision-vision.html">Misión & Visión</a></li>
+<li><a href="index.html" class="active" id="menuInicio">Inicio</a></li>
+<li><a href="habitaciones.html" id="menuHabitaciones">Habitaciones</a></li>
+<li><a href="reservaciones.html" id="menuReservaciones">Reservaciones</a></li>
+<li><a href="contacto.html" id="menuContacto">Contacto</a></li>
+<li><a href="mision-vision.html" id="menuMision">Misión & Visión</a></li>
 </ul>
+
 </nav>
 </header>
 
@@ -43,22 +46,22 @@
 
 <div class="hero-content">
 
-<h1 data-aos="fade-up">
+<h1 id="tituloHotel" data-aos="fade-up">
 Hotel Quinta Dalam
 </h1>
 
-<p data-aos="fade-up">
+<p id="subtitulo" data-aos="fade-up">
 Elegancia, confort y serenidad en cada estancia.
 </p>
 
 <div class="hero-botones" data-aos="fade-up">
 
-<a href="reservaciones.html" class="hero-btn-principal">
+<a href="reservaciones.html" class="hero-btn-principal" id="btnReservar">
 <i class="fa-solid fa-calendar-check"></i>
 Reservar Ahora
 </a>
 
-<a href="habitaciones.html" class="hero-btn-secundario">
+<a href="habitaciones.html" class="hero-btn-secundario" id="btnHabitaciones">
 Descubrir Habitaciones
 </a>
 
@@ -68,75 +71,68 @@ Descubrir Habitaciones
 
 </section>
 
-
 <!-- SERVICIOS -->
 
 <section class="section">
-
 <div class="container">
 
-<h2>Servicios</h2>
+<h2 id="tituloServicios">Servicios</h2>
 
 <div class="servicios-grid">
 
-<div class="servicio-card" data-aos="fade-up">
+<div class="servicio-card">
 <img src="imagenes/servicio-piscina.jpg" alt="Piscina">
 </div>
 
-<div class="servicio-card" data-aos="fade-up">
+<div class="servicio-card">
 <img src="imagenes/servicio-restaurante.jpg" alt="Restaurante">
 </div>
 
-<div class="servicio-card" data-aos="fade-up">
+<div class="servicio-card">
 <img src="imagenes/servicio-wifi.jpg" alt="WiFi">
 </div>
 
-<div class="servicio-card" data-aos="fade-up">
+<div class="servicio-card">
 <img src="imagenes/servicio-estacionamiento.jpg" alt="Estacionamiento">
 </div>
 
 </div>
 
 </div>
-
 </section>
-
 
 <!-- GALERIA -->
 
 <section class="section">
-
 <div class="container">
 
-<h2>Galería</h2>
+<h2 id="tituloGaleria">Galería</h2>
 
 <div class="galeria-mosaico">
 
-<div class="item-grande" data-aos="zoom-in">
+<div class="item-grande">
 <img src="imagenes/galeria1.jpg">
 </div>
 
-<div data-aos="zoom-in">
+<div>
 <img src="imagenes/galeria2.jpg">
 </div>
 
-<div data-aos="zoom-in">
+<div>
 <img src="imagenes/galeria3.jpg">
 </div>
 
-<div class="item-vertical" data-aos="zoom-in">
+<div class="item-vertical">
 <img src="imagenes/galeria4.jpg">
 </div>
 
 </div>
 
 </div>
-
 </section>
 
-
 <footer class="footer">
-<p>© 2026 Hotel Quinta Dalam - Todos los derechos reservados</p>
+<p id="footerTexto">© 2026 Hotel Quinta Dalam - Todos los derechos reservados</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -153,6 +149,8 @@ const header = document.querySelector(".header");
 header.classList.toggle("scrolled", window.scrollY > 50);
 });
 </script>
+
+<!-- IMPORTANTE: idioma primero -->
 
 <script src="js/idioma.js"></script>
 
